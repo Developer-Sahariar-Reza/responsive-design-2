@@ -291,6 +291,34 @@ header {
   font-size: 20px;
   font-weight: 600;
 }
+
+/* sponsor section start  */
+.sponsor-title {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sponsor-subtitle {
+  width: 45%;
+  text-align: center;
+  margin: 15px auto;
+}
+
+.sponsor-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+  margin: 50px;
+}
+.sponsor-image {
+  width: 60%;
+}
+
+.sponsor-image img {
+  width: 80%;
+}
 /* responsive style start  */
 
 /* Styles for smaller device  */
@@ -391,6 +419,17 @@ header {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 50px;
   }
+
+  /* sponsor section start  */
+  .sponsor-subtitle {
+    width: 90%;
+  }
+  .sponsor-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 /* Styles for medium device  */
@@ -470,5 +509,14 @@ header {
   .fact-container {
     grid-template-columns: repeat(2, 1fr);
     margin: 50px 80px;
+  }
+
+  /* sponsor section start  */
+  .sponsor-subtitle {
+    width: 90%;
+  }
+  .sponsor-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
   }
 }
