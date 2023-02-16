@@ -319,6 +319,57 @@ header {
 .sponsor-image img {
   width: 80%;
 }
+
+/* contact us section start  */
+.contact-us {
+  background-color: #fff4e7;
+}
+.contact-container {
+  padding: 100px 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact-title {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.contact-description {
+  width: 85%;
+}
+
+.media-icons i {
+  color: #ff9026;
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+.media-icons i:hover {
+  color: #ff6347;
+  cursor: pointer;
+}
+
+.input-info {
+  display: block;
+  width: 450px;
+  height: 65px;
+  border-radius: 5px;
+  border: 0;
+  margin-bottom: 25px;
+  padding: 0 15px;
+}
+
+.input-message {
+  display: block;
+  width: 450px;
+  height: 180px;
+  border-radius: 5px;
+  border: 0;
+  margin-bottom: 25px;
+  padding: 0 15px;
+}
 /* responsive style start  */
 
 /* Styles for smaller device  */
@@ -430,6 +481,17 @@ header {
     align-items: center;
     gap: 20px;
   }
+
+  /* contact us section start  */
+  .contact-container {
+    flex-direction: column;
+  }
+  .input-info {
+    width: 85%;
+  }
+  .input-message {
+    width: 85%;
+  }
 }
 
 /* Styles for medium device  */
@@ -518,5 +580,15 @@ header {
   .sponsor-container {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 25px;
+  }
+
+  /* contact us section start  */
+  .contact-title,
+  .contact-description,
+  .media-icons {
+    text-align: center;
+  }
+  .contact-container {
+    flex-direction: column;
   }
 }
