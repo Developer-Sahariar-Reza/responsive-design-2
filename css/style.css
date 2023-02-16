@@ -13,9 +13,9 @@ body {
 
 .btn-primary {
   background-color: #ff9026;
-  padding: 20px 25px;
+  padding: 15px 20px;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   border: 0;
   border-radius: 5px;
   font-family: 700;
@@ -104,6 +104,62 @@ header {
   text-align: center;
 }
 
+/* main start  */
+
+/* about us section start  */
+
+.about-us {
+  margin: 85px auto;
+}
+
+.about-us-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-us-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  width: 40%;
+  padding-left: 100px;
+}
+
+.about-us-image img {
+  width: 100%;
+}
+
+.about-us-description {
+  width: 40%;
+}
+
+.about-us-subtitle {
+  text-align: justify;
+}
+
+.about-us-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.color-1 {
+  color: #424242;
+  font-weight: 500;
+  font-size: 45px;
+}
+
+.color-2 {
+  font-family: 700;
+  font-size: 45px;
+}
+
+.color-3 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #ff9026;
+}
+
 /* responsive style start  */
 
 /* Styles for smaller device  */
@@ -147,6 +203,28 @@ header {
     display: inline;
     text-align: justify;
   }
+
+  /* about us section start  */
+  .about-us-container {
+    flex-direction: column;
+  }
+
+  .about-us-image {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 0;
+    margin-bottom: 35px;
+  }
+
+  .about-us-description {
+    width: 80%;
+  }
+
+  .color-1,
+  .color-2,
+  .color-3 {
+    font-size: 1.5em;
+  }
 }
 
 /* Styles for medium device  */
@@ -179,5 +257,22 @@ header {
     width: 75%;
     margin: 30px auto;
     display: block;
+  }
+
+  /* about us section start  */
+  .about-us-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-us-image {
+    padding-left: 0;
+    width: 70%;
+    margin-bottom: 50px;
+  }
+
+  .about-us-description {
+    width: 70%;
   }
 }
