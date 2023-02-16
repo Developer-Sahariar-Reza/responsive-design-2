@@ -1,0 +1,101 @@
+/* google font  */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap");
+
+/* common css styles start  */
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* header start */
+header {
+  background-color: #fff4e7;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 110px;
+  margin: 0 auto;
+}
+
+.logo {
+  padding-left: 100px;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #ff9026;
+}
+
+.nav {
+  padding-right: 100px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav ul li {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #424242;
+}
+
+/* responsive style start  */
+
+/* Styles for smaller device  */
+@media screen and (max-width: 576px) {
+  /* header start for smaller device  */
+
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .logo {
+    padding-left: 0;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+  }
+
+  .nav {
+    padding-right: 0;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav ul li {
+    margin-bottom: 15px;
+  }
+}
+
+/* Styles for medium device  */
+@media screen and (min-width: 577px) and (max-width: 991px) {
+  /* header start for medium device  */
+
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .logo {
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .nav {
+    padding-right: 0;
+  }
+}
