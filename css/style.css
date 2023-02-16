@@ -14,11 +14,19 @@ body {
 .btn-primary {
   background-color: #ff9026;
   padding: 15px 20px;
-  color: #ffffff;
-  font-size: 18px;
   border: 0;
   border-radius: 5px;
-  font-family: 700;
+}
+
+.btn-primary a {
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #ff6347;
 }
 
 /* header start */
@@ -268,11 +276,11 @@ header {
 
   .about-us-image {
     padding-left: 0;
-    width: 70%;
+    width: 50%;
     margin-bottom: 50px;
   }
 
   .about-us-description {
-    width: 70%;
+    width: 50%;
   }
 }
