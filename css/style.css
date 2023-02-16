@@ -169,8 +169,6 @@ header {
 }
 
 /* feature section start  */
-.feature {
-}
 
 .feature-container {
   display: flex;
@@ -189,9 +187,6 @@ header {
 
 .feature-image img {
   width: 100%;
-}
-
-.feature-btn {
 }
 
 .feature-title {
@@ -242,6 +237,59 @@ header {
 .feature-2 {
   font-weight: 500;
   font-size: 25px;
+}
+
+/* facts section start  */
+
+.facts {
+  margin: 100px 150px;
+}
+
+.facts-title {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.facts-subtitle {
+  width: 65%;
+}
+
+.fact-container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+.fact {
+  border: 1px solid #ff6347;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 245px;
+  width: 245px;
+  transition: transform 2s;
+}
+
+.fact:hover {
+  transform: rotate(-90deg);
+  border: 3px solid #ff6347;
+}
+
+.fact-title {
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.fact-subtitle {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 600;
 }
 /* responsive style start  */
 
@@ -330,6 +378,19 @@ header {
     display: block;
     text-align: center;
   }
+
+  /* facts section start  */
+  .facts {
+    margin-left: 50px;
+    margin-right: 0;
+  }
+  .facts-subtitle {
+    width: 80%;
+  }
+  .fact-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 50px;
+  }
 }
 
 /* Styles for medium device  */
@@ -397,5 +458,17 @@ header {
 
   .feature-btn {
     display: none;
+  }
+
+  /* fact section start  */
+  .facts {
+    margin-left: 30px;
+  }
+  .facts-subtitle {
+    width: 90%;
+  }
+  .fact-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px 80px;
   }
 }
