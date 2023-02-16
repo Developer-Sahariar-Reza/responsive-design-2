@@ -370,6 +370,15 @@ header {
   margin-bottom: 25px;
   padding: 0 15px;
 }
+
+/* footer start  */
+footer {
+  margin: 100px auto;
+  background-color: #fff4e7;
+  width: 75%;
+  text-align: center;
+  padding: 10px;
+}
 /* responsive style start  */
 
 /* Styles for smaller device  */
@@ -492,6 +501,13 @@ header {
   .input-message {
     width: 85%;
   }
+
+  /* footer start  */
+  footer {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 50px;
+  }
 }
 
 /* Styles for medium device  */
@@ -590,5 +606,12 @@ header {
   }
   .contact-container {
     flex-direction: column;
+  }
+
+  /* footer start  */
+  footer {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
   }
 }
