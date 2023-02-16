@@ -320,6 +320,11 @@ header {
   width: 80%;
 }
 
+.sponsor-image img:hover {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
 /* contact us section start  */
 .contact-us {
   background-color: #fff4e7;
@@ -504,7 +509,7 @@ footer {
 
   /* footer start  */
   footer {
-    width: 100%;
+    width: 80%;
     margin-bottom: 0;
     margin-top: 50px;
   }
@@ -610,7 +615,7 @@ footer {
 
   /* footer start  */
   footer {
-    width: 100%;
+    width: 80%;
     margin-top: 50px;
     margin-bottom: 20px;
   }
