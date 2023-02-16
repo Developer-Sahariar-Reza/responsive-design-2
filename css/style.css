@@ -6,10 +6,27 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+.text-primary {
+  color: #727272;
+  font-weight: 400;
+}
+
+.btn-primary {
+  background-color: #ff9026;
+  padding: 20px 25px;
+  color: #ffffff;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+  font-family: 700;
+}
+
 /* header start */
 header {
   background-color: #fff4e7;
 }
+
+/* navbar start  */
 
 .nav-container {
   display: flex;
@@ -51,14 +68,53 @@ header {
   color: #424242;
 }
 
+/* banner start  */
+
+.banner-title h4 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.banner-subtitle {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.banner-subtitle span {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.banner-image {
+  width: 70%;
+  margin: 50px auto;
+  padding-bottom: 50px;
+}
+
+.banner-image img {
+  width: 100%;
+}
+
+.banner-btn {
+  margin-top: 35px;
+  text-align: center;
+}
+
 /* responsive style start  */
 
 /* Styles for smaller device  */
 @media screen and (max-width: 576px) {
-  /* header start for smaller device  */
+  /* header start */
+
+  /* navbar start  */
 
   .nav-container {
     flex-direction: column;
+    padding-bottom: 30px;
   }
 
   .logo {
@@ -80,14 +136,28 @@ header {
   .nav ul li {
     margin-bottom: 15px;
   }
+
+  /* banner start  */
+
+  .banner-title h4 {
+    font-size: 2em;
+  }
+
+  .banner-subtitle span {
+    display: inline;
+    text-align: justify;
+  }
 }
 
 /* Styles for medium device  */
 @media screen and (min-width: 577px) and (max-width: 991px) {
-  /* header start for medium device  */
+  /* header start  */
+
+  /* navbar start  */
 
   .nav-container {
     flex-direction: column;
+    padding-bottom: 50px;
   }
 
   .logo {
@@ -97,5 +167,17 @@ header {
 
   .nav {
     padding-right: 0;
+  }
+
+  /* banner start  */
+
+  .banner-title h4 {
+    font-size: 2.5em;
+  }
+
+  .banner-subtitle {
+    width: 75%;
+    margin: 30px auto;
+    display: block;
   }
 }
